@@ -1,0 +1,30 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+    }
+    input[type=text]:focus {
+    background-color: none;
+    }
+    .icon-long-arrow-left{
+        text-align: left;
+        position: absolute;
+        top: 27px;
+    }
+    .icon-search{
+        text-align: right;
+        position: absolute;
+        top: 27px;
+        right: 27px;
+    }
+    form input::placeholder{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 200px;
+    font-weight: 500;
+    color: #666464;
+    }

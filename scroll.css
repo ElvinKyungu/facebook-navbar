@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.petit-container {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.container {
+    min-width: 992px !important;
+}
+
+div.gallery {
+    margin-left: 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 100px;
+    border-radius: 0px 0px 10px 10px;
+    height: 150px;
+}
+
+div.gallery img {
+    margin: 0;
+    width: 100px;
+    height: 80px;
+}
+
+div.desc {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .story {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: scroll;
+        background-color: #fff;
+    }
+    .story img {
+        width: 100px;
+        height: 80px;
+        margin-left: 15px;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .story {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff;
+    }
+    .story img {
+        width: 100px;
+        height: 80px;
+        margin-left: 15px;
+        border-radius: 10px 10px 0px 0px;
+    }
+}

@@ -1,0 +1,601 @@
+:root{
+    --primaryColor: #f1f1f1;
+    --facebook-color-Mode-Gratuit: #a837b3;
+    --facebook-coleur-rouge: #eb0028;
+    --facebook-color-Mode-Payant: #18191a;
+    --facebook-color-Titre: #0b6cdb;
+    --facebook-color-Menu: #1c395a;
+    --colorNav: #242526;
+    --grey: #c4bbc2;
+    --grey-foncé: rgb(151, 136, 136);
+}
+.bg-white
+{
+    background-color: #fff;
+}
+.text-noir
+{
+    color: #000;
+}
+.text-blanc{
+    color: #fff;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primaryColor);
+    font-family: "Roboto", sans-serif
+}
+a{
+    text-decoration: none;
+}
+
+
+/* NAV */
+nav{
+    display: block;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    z-index: 2;
+}
+/* NAV HAUT */
+nav div.nav-haut{
+    background-color: var(--facebook-color-Mode-Payant);
+    height: 70px;
+    margin-top: -1%;
+}
+nav div.nav-haut h5 a{
+    color: var(--primaryColor);
+    font-size: 15px;
+}
+h5.modeH5{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.btn-get-started {
+    position: absolute;
+    top: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    margin-left: 65%;
+    border: .5px solid #fff;
+}
+/* NAV MILIEU */
+nav .nav-milieu
+{
+    margin-top: -1px;
+    background-color: #fff;
+    padding: 20px;
+}
+nav .nav-milieu i.icon-search{
+    position: absolute;
+    display: inline-flex;
+    right: 50px;
+    top: 70px;
+}
+nav .nav-milieu i.icon-user-circle-o{
+    position: absolute;
+    display: inline-flex;
+    right: 2px;
+    top: 70px;
+}
+nav .nav-milieu .icon-left
+{
+    margin-left: 85%;
+    margin-top: -10px;
+}
+nav .nav-milieu i
+{
+    color: var(--colorNav);
+    background-color: var(--grey); 
+}
+.nav-milieu i.icon{
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.FacebookTitre{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: -15px;
+    font-size: 30px;
+    color: var(--facebook-color-Titre);
+}
+/* NAV BAS */
+nav .nav-bas{
+    background-color: #fff;
+    margin-top: -10px;
+    padding: 12px;
+    border-bottom: 1px solid #d1d3d6;
+}
+nav .nav-bas li{
+    list-style: none;
+    display: inline-block;
+    margin: 0; 
+}
+ul li .iconLien{
+    color: var(--colorNav);
+    font-size: 25px;
+}
+li a .icon-home2{
+    position: absolute;
+    left: 2%;
+    top: 110px;
+}
+li a .icon-people_outline{
+    position: absolute;
+    left: 19%;
+    top: 110px;
+}
+li a .icon-comments{
+    position: absolute;
+    left: 37%;
+    top: 110px;
+}
+li a .icon-ondemand_video{
+    position: absolute;
+    right: 37%;
+    top: 110px;
+}
+li a .icon-notifications_none{
+    position: absolute;
+    right: 18%;
+    top: 110px;
+}
+li a .icon-bars{
+    position: absolute;
+    right: 2%;
+    top: 110px;
+}
+
+/* C'est que l'on appelle Media Query */
+@media (max-width: 330px)
+{
+    a.btn-get-started {
+        left: -30px;
+        position: absolute;
+    }
+}
+@media (max-width: 400px)
+{
+    a.btn-get-started {
+        left: -30px;
+        position: absolute;
+    }
+    .modeH4{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 2px;
+    }
+}
+@media (max-width: 540px)
+{
+    .btn-get-started {
+        position: absolute;
+        top: 12px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 17px;
+        color: #fff;
+        left: -0%;
+        border: .5px solid #fff;
+    }
+}
+@media (max-width: 610px)
+{
+    .btn-get-started {
+        position: absolute;
+        margin-left: 60%;
+    }
+}
+@media (min-width: 769px)
+{
+    nav{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+}
+ul.nav{
+    display: none;
+}
+@media (min-width: 769px)
+{
+    ul.nav{
+        display: block;
+    }
+    /* Certaines classe */
+    .texte-centrer{
+        align-items: center;
+        text-align: center;
+    }
+    .texte-en-majuscule{
+        text-transform: uppercase;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--facebook-color-Menu);
+        padding-bottom: 3px;
+        border-bottom: 0.2px solid #d1d3d6;
+        height: 58px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    /* NAVBAR GAUCHE */
+    ul.nav .left{
+        width: 21%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-left: 5px;
+    }
+    .nav .left img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .nav .left .search{
+        position: relative;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav .left .search input{
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        color: #8f7f7f;
+        background-color: #f0f5fa;
+        height: 100%;
+        font-size: 0.7rem;
+        padding-left: 25px;
+        transition: all 0.3s;
+    }
+    .nav .left .search input:focus{
+        color: #000;
+        font-size: 15px;
+        width: 110%;
+        padding-left: 5px;;
+    }
+    .nav .left .search input:focus + i{
+        opacity: 0;
+        left: 6px;
+    }
+    .nav .left .search input::placeholder{
+        font-size: 14px;
+        font-weight: 500;
+        color: #666464;
+    }
+    .nav .left .search i{
+        position: absolute;
+        z-index: 2;
+        color: #d1d3d6;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: 3px;
+        font-size: 15px;
+        transition: all 0.3s;
+    }
+    /* NAV MENU */
+    .nav .menu {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 17rem;
+    }
+    .nav .menu li{
+        margin-left: 5rem;
+        list-style: none;
+    }
+    .nav .menu i{
+        color: #d1d3d6;
+        cursor: pointer;
+    }
+    img.profile{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 0.5rem;
+        right: 25rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    ul .menu .icon
+    {
+        font-size: 1.5rem;
+    }
+    h2{
+        position: absolute;
+        right: 27%;
+        top: 36%;
+        cursor: pointer;
+        color: #d1d3d6;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1rem;
+    }
+    /* NAV DROITE */
+    .nav .right{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 64rem;
+        margin-top: -2rem;
+    }
+    .nav .right .create,
+    .nav .right .messenger,
+    .nav .right .notifications,
+    .nav .right .down{
+        position: relative;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1e4d7c;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .nav .right .create i{
+        color: #d1d3d6;
+        font-size: 1.3rem;
+        margin-top: .7rem;
+        margin-left: .7rem;
+    }
+    .nav .right .messenger i{
+        color: #d1d3d6;
+        font-size: 1.3rem;
+        margin-top: .7rem;
+        margin-left: .7rem;
+    }
+    .nav .right .notifications i{
+        color: #d1d3d6;
+        font-size: 1.3rem;
+        margin-top: .7rem;
+        margin-left: .7rem;
+    }
+    .nav .right .down i{
+        color: #d1d3d6;
+        font-size: 1.3rem;
+        margin-top: .5rem;
+        margin-left: .8rem;
+    }
+    .nav #cart_total
+    {
+        font-size: 1rem;
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background-color: var(--facebook-coleur-rouge);
+        padding: .2rem .4rem;
+        border-radius: 100%;
+        color: var(--primaryColor);
+    }
+}
+
+/* FIN NAV */
+
+/* DEBUT DU CODE STYLE POUR LA PARTIE BODY EXCLUT NAV */
+
+.pensez-vous{
+    color: var(--facebook-color-Mode-Payant);
+    font-size: 20px;
+    text-align: left;
+    display: block;
+    margin-left: 60px;
+    margin-top: -40px;
+}
+.icon-apres-aquoi-pensez-vous{
+    font-size: 30px;
+    color: var(--facebook-color-Titre);
+    margin-left: 60px;
+}
+.marker i{
+    position: absolute;
+    margin-top: -34px;
+    font-size: 30px;
+    color: var(--facebook-coleur-rouge);
+    margin-left: 62%;
+}
+.texte a{
+    position: absolute;
+    top: 235px;
+    position: absolute;
+    font-size: 20px;
+    left: 97px;
+    color: #000;
+}
+.localisation a{
+    color: #000;
+    top: 235px;
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+}
+.souligner-bas{
+    border-bottom: 1px solid rgb(199, 194, 194);
+}
+.container{
+    background-color: #fff;
+}
+.photo-pensez-vous{
+    font-size: 27px;
+    color: var(--facebook-color-Mode-Payant);
+}
+.nouvelle-publication-story{
+    width: 100%;
+    height: 55px;
+    background-color: silver;
+}
+.bouton-bleu{
+    padding: 10px 27px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 75px;
+    background-color: var(--facebook-color-Titre);
+}
+.border-left{
+    top: 238px;
+    left: 50%;
+    position: absolute;
+    border-left: 1px solid rgb(116, 113, 113);
+    color: #fff;
+}
+.border-right{
+    top: 170px;
+    right: 20%;
+    color: #fff;
+    position: absolute;
+    border-left: 1px solid rgb(116, 113, 113);
+}
+.container-pensez-vous{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -25px;
+}
+.container-blanche-background{
+    z-index: 1;
+    left: 14.4px;
+    background-color: #fff;
+    width: 101px;
+    height: 80px;
+    position: absolute;
+    top: 61%;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(160, 152, 152);
+    flex-direction: row;
+   
+}
+.add-story{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.avant-story{
+    width: 100%;
+    height: 10px;
+    background-color: var(--grey);
+}
+.ajouter-story{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--facebook-color-Titre);
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+}
+.icon-add{
+    font-size: 25px;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+    background-color: #fff;
+   
+}
+span img{
+    width: 100px;
+    height: 150px;
+    margin-left: 15px;
+    border-radius: 10 10px 0px 0px;   
+}
+.profile-pub{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.name-pub{
+    color: var(--facebook-color-Mode-Payant);
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
+    margin-top: -2.3rem;
+    margin-left: 3.5rem;
+}
+.date-pub{
+    color: var(--facebook-color-Mode-Payant);
+    text-align: right;
+    margin-top: -3rem; 
+    margin-right: 2px; 
+}
+.user-publication{
+    background-color: #fff;
+    height: 10vh;
+}
+.icon-more_horiz{
+    color: var(--facebook-color-Mode-Payant);
+    font-size: 20px;
+}
+div.publictaion img.pub{
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+}
+/* Boutons like et dislike en bas de la publication*/
+.like{
+    font-size: 25px;
+    text-align: right;
+}
+.like-paragraphe{
+    margin-left: 1rem;
+}
+.like-paragraphe .icon-thumbs-o-up
+{
+    color: var(--facebook-color-Titre);
+}
+.like .icon{
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 100px;
+    margin-right: 60px;
+}
+.like .icon-thumbs-o-up{
+    color: var(--facebook-color-Titre);
+}
+/* FOOTER commence par ici */
+.icon-spinner{
+    position: absolute;
+    color: #443d3d;
+    font-size: 25px;
+    left: 50%;
+}
+.loading{
+    height: 80px;
+    background-color: #cfc9c9;
+}

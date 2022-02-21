@@ -1,0 +1,208 @@
+/* Mes couleurs */
+:root{
+    --primaryColor: #f1f1f1;
+    --orange: #eb0028;
+    --vert-whatsapp: #;
+    --grey: #;
+    --facebook-color: #;
+    --footer-color: #;
+}
+/* Certaines classe */
+.texte-centrer{
+    align-items: center;
+    text-align: center;
+}
+.texte-en-majuscule{
+    text-transform: uppercase;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #18191a; 
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242526;
+    padding-bottom: 3px;
+    border-bottom: 0.2px solid #d1d3d6;
+    height: 58px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+/* NAVBAR GAUCHE */
+.nav .left{
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.nav .left img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav .left .search{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav .left .search input{
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #e4e6eb;
+    background-color: #3a3b3c;
+    height: 100%;
+    font-size: 0.7rem;
+    padding-left: 25px;
+    transition: all 0.3s;
+}
+.nav .left .search input:focus{
+    width: 110%;
+    padding-left: 5px;;
+}
+.nav .left .search input:focus + i{
+    opacity: 0;
+    left: 6px;
+}
+.nav .left .search input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    color: #d1d3d6;
+}
+.nav .left .search i{
+    position: absolute;
+    z-index: 2;
+    color: #d1d3d6;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 3px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+/* NAV MENU */
+.nav .menu {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30rem;
+}
+.nav .menu li{
+    margin-left: 5rem;
+    list-style: none;
+}
+.nav .menu i{
+    color: #d1d3d6;
+    cursor: pointer;
+}
+img.profile{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0.5rem;
+    right: 20rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul .menu .icon
+{
+    font-size: 1.5rem;
+}
+h2{
+    cursor: pointer;
+    color: #d1d3d6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+/* NAV DROITE */
+.nav .right{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -25rem;
+}
+.nav .right .create,
+.nav .right .messenger,
+.nav .right .notifications,
+.nav .right .down{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3a3b3c;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.nav .right .create i{
+    color: #d1d3d6;
+    font-size: 1.3rem;
+    margin-top: .7rem;
+    margin-left: .7rem;
+}
+.nav .right .messenger i{
+    color: #d1d3d6;
+    font-size: 1.3rem;
+    margin-top: .7rem;
+    margin-left: .7rem;
+}
+.nav .right .notifications i{
+    color: #d1d3d6;
+    font-size: 1.3rem;
+    margin-top: .7rem;
+    margin-left: .7rem;
+}
+.nav .right .down i{
+    color: #d1d3d6;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    margin-left: .8rem;
+}
+.nav #cart_total
+{
+    font-size: 1rem;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: var(--orange);
+    padding: .2rem .4rem;
+    border-radius: 100%;
+    color: var(--primaryColor);
+}
+/* Responsive Menu de navigation */
+@media screen and(max-width: 578px)
+{
+    
+}
+@media screen and(max-width: 769px)
+{
+    
+}
+@media screen and(max-width: 578px)
+{
+    
+}
+@media screen and(max-width: 578px)
+{
+    
+}
